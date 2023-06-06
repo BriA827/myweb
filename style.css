@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box; 
+}
+
+body{
+    margin: 0;
+}
+
+.header-wrapper{
+    width: 90%;
+    margin: 0px auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.logo-wrapper{
+    width: 250px;
+    border: 2px solid black;
+}
+
+.slash{
+    display: none;
+}
+
+.logo-name{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pfp{
+    width: 200px;
+    height: auto;
+}
