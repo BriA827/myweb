@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -8,10 +9,11 @@ body{
 
 .header-wrapper{
     width: 90%;
-    margin: 0px auto; 
+    height: 50vh;
+    margin: 10px auto; 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .logo-wrapper{
@@ -22,7 +24,26 @@ body{
     display: none;
 }
 
+.name-wrapper{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.blue-box{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.logo-occupation{
+    margin: 0;
+}
+
 .logo-name{
+    margin-bottom: 0;
     font-size: 22px;
     font-weight: bold;
 }
@@ -39,7 +60,7 @@ nav{
     height: 80vh;
     display: none;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     position: absolute;
     top: 0;
@@ -47,8 +68,13 @@ nav{
 }
 
 .close-button{
-    width: 80%;
+    width: 90%;
     text-align: right;
+    margin: 30px 0;
+}
+
+.open-button{
+    margin: 20px 0;
 }
 
 .close-button > i,
@@ -58,9 +84,74 @@ nav{
 }
 
 .link{
+    margin-bottom: 60px;
     font-size: 30px;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
 }
 
+.left-wrapper{
+    height: 45vh;
+    background-color: rgb(221, 191, 179);
+}
+
+.right-wrapper{
+    background-color: rgb(221, 191, 179);
+}
+
+h1{
+    margin: 0;
+    font-size: 4rem;
+}
+
+.intro-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro-button{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2rem 0;
+    padding: .5rem .75rem;
+    border-radius: 20px;
+}
+
+.button1{
+    color: white;
+    border: 2px solid blue;
+    background-color: blue;
+    margin-right: 1rem;
+}
+
+.button2{
+    color: black;
+    border: 2px solid black;
+}
+
+.button1:hover{
+    background-color: transparent;
+    color: black;
+    transition: .5s;
+}
+
+.button2:hover{
+    border-color: blue;
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
+
+.card-wrapper{
+    width: 90%;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
